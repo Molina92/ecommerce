@@ -20,7 +20,7 @@ body {
 #root {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 15fr 1fr;
+    /* grid-template-rows: 1fr 15fr 1fr; */
     grid-template-areas: 
         'nav nav'
         'aside section'
@@ -162,8 +162,23 @@ section {
 footer {
     grid-area: footer;
     background-color: var(--primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5em;
 }
+
+nav {
+    display: inline;
+}
+
+footer {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .contacto {
+    padding: 1rem;
+    width: 100%;   
+    display: flex;
+    justify-content: center;    
+}
+
