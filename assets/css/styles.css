@@ -78,11 +78,8 @@ section {
     background-color: var(--bg);
     color: var(--font2);
     padding: 2em;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:1em;
+    display: grid;
+    
 }
 
 .card {
