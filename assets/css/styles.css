@@ -19,22 +19,22 @@ body {
 
 #root {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    /* grid-template-rows: 1fr 15fr 1fr; */
+    grid-template-columns: auto;
     grid-template-areas: 
-        'nav nav'
-        'aside section'
-        'footer footer'
+        'nav'
+        'aside'
+        'section'
+        'footer'
     ;
 }
 
-nav {
+#root nav {
     grid-area: nav;
     color: var(--white);
     background-color:var(--primary);
-    display: flex;
-    justify-content: center;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav p {
@@ -46,7 +46,6 @@ aside {
     color: var(--primary);
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 1em;
 }
 
@@ -61,7 +60,7 @@ aside p {
 
 aside ul {
     list-style-type: none;
-    margin: 0.5em 1em 0 0;
+    margin: 0.5em 1em 0 1em;
 }
 
 aside ul li {
@@ -74,17 +73,18 @@ aside ul li span {
 }
 
 section {
+    display: grid;
     grid-area: section;
+    justify-content: center;
+    min-height: calc(100vh - 147px);
     background-color: var(--bg);
     color: var(--font2);
     padding: 2em;
-    display: grid;
-    
 }
 
 .card {
-    height: 45%;
-    width: 32%;
+    width: 300px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +97,7 @@ section {
     height: 80%;
     background: url('../img/calzado1.png');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-img2 {
@@ -105,7 +105,7 @@ section {
     height: 80%;
     background: url('../img/calzado2.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-img3 {
@@ -113,7 +113,7 @@ section {
     height: 80%;
     background: url('../img/calzado3.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-img4 {
@@ -121,7 +121,7 @@ section {
     height: 80%;
     background: url('../img/calzado4.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-img5 {
@@ -129,7 +129,7 @@ section {
     height: 80%;
     background: url('../img/calzado5.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-img6 {
@@ -137,7 +137,7 @@ section {
     height: 80%;
     background: url('../img/calzado6.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-title , .card-price {
@@ -179,3 +179,14 @@ footer .contacto {
     justify-content: center;    
 }
 
+/* 
+    CODIGO PARA EL MEDIA QUERY
+#root {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+        'nav nav'
+        'aside section'
+        'footer footer'
+    ;
+} */
