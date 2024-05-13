@@ -205,11 +205,9 @@ footer .contacto {
 
 @media (min-width: 576px) {
     #root {
-        display: grid;
-        grid-template-columns: 2fr 5fr;
+        grid-template-columns: 2fr 7fr;
         grid-template-areas:
             'header nav'
-            'aside nav'
             'aside section'
             'footer section'
         ;
@@ -232,21 +230,19 @@ footer .contacto {
         color: var(--text);
     }
 
-    aside
+    /* section {
+        grid-template-columns: auto auto auto auto;
+    } */
 
+    footer {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* footer .contacto p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 }
-
-
-
-
-/* 
-    CODIGO PARA EL MEDIA QUERY
-#root {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
-        'nav nav'
-        'aside section'
-        'footer footer'
-    ;
-} */
