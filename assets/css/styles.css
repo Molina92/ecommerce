@@ -190,7 +190,7 @@ footer {
 }
 
 footer {
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -228,6 +228,14 @@ footer .contacto {
         align-items: center;
         background: var(--primary);
         color: var(--text);
+    }
+
+    nav {
+        margin-bottom: 1rem;
+    }
+
+    nav .box-filter {
+        width: 50%;
     }
 
     section {
