@@ -110,8 +110,8 @@ section {
 }
 
 .card {
-    width: 300px;
-    height: 450px;
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,48 +120,48 @@ section {
 }
 
 .card-img {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
     background: url('../img/calzado1.png');
     background-position: center;
     background-size: contain;
 }
 
 .card-img2 {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
     background: url('../img/calzado2.jpg');
     background-position: center;
     background-size: contain;
 }
 
 .card-img3 {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
     background: url('../img/calzado3.jpg');
     background-position: center;
     background-size: contain;
 }
 
 .card-img4 {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
     background: url('../img/calzado4.jpg');
     background-position: center;
     background-size: contain;
 }
 
 .card-img5 {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
     background: url('../img/calzado5.jpg');
     background-position: center;
     background-size: contain;
 }
 
 .card-img6 {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
     background: url('../img/calzado6.jpg');
     background-position: center;
     background-size: contain;
@@ -230,19 +230,23 @@ footer .contacto {
         color: var(--text);
     }
 
-    /* section {
-        grid-template-columns: auto auto auto auto;
-    } */
+    section {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .card-img, .card-img2, .card-img3, .card-img4, .card-img5, .card-img6 {
+        width: 100%;
+        background-size: cover;
+    }
 
     footer {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
     }
-
-    /* footer .contacto p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
 }
